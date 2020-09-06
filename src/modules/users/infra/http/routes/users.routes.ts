@@ -10,7 +10,7 @@ import UserAvatarController from '../controllers/UserAvatarController'
 const usersRouter = Router()
 const usersController = new UsersController()
 const userAvatsarController = new UserAvatarController()
-const upload = multer(uploadConfig)
+const upload = multer(uploadConfig.multer)
 
 usersRouter.post('/', celebrate({
   [Segments.BODY]: {
