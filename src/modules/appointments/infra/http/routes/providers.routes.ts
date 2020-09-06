@@ -8,6 +8,6 @@ const providersController = new ProvidersController()
 
 providersRouter.use(ensureAuthenticated)
 
-providersRouter.get('/', providersController.create)
+providersRouter.get('/', providersController.index)
 
 export default providersRouter
